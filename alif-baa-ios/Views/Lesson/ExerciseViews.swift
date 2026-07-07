@@ -18,7 +18,8 @@ struct ExerciseStepView: View {
     @State private var strokes: [[CGPoint]] = []
     @State private var clearTrigger = 0
 
-    private static let canvasSize = CGSize(width: 280, height: 300)
+    /// Measured from the canvas geometry; the fallback only matters pre-layout.
+    @State private var canvasSize = CGSize(width: 280, height: 300)
 
     var body: some View {
         VStack(spacing: 20) {
@@ -76,7 +77,7 @@ struct ExerciseStepView: View {
         case .draw:
             let verdict = StrokeVerifier.verify(
                 strokes: strokes,
-                canvasSize: Self.canvasSize,
+                canvasSize: canvasSize,
                 letterArabic: step.letter.arabic,
                 strict: strict
             )
@@ -94,33 +95,43 @@ struct ExerciseStepView: View {
     // MARK: - A. Draw (§4.2 A)
 
     private var drawBody: some View {
-        VStack(spacing: 14) {
-            ZStack {
-                // Ghosted target letter on the 280×300 canvas.
-                ArabicText(text: step.letter.arabic, size: 170, color: AB.neutral300.opacity(0.8))
-                    .allowsHitTesting(false)
-                StrokeInputView(strokes: $strokes, clearTrigger: clearTrigger)
+        VStack(spacing: 12) {
+            // Full-size canvas: the guide letter draws itself, then its sound
+            // plays; the learner traces over it.
+            GeometryReader { geo in
+                ZStack {
+                    LetterGuideView(letter: step.letter, size: geo.size)
+                    StrokeInputView(strokes: $strokes, clearTrigger: clearTrigger)
+                }
+                .onAppear { canvasSize = geo.size }
+                .onChange(of: geo.size) { _, newSize in canvasSize = newSize }
             }
-            .frame(width: Self.canvasSize.width, height: Self.canvasSize.height)
             .background(AB.surface)
             .clipShape(RoundedRectangle(cornerRadius: AB.radiusCard, style: .continuous))
             .shadow(color: AB.cardShadow, radius: 15, x: 0, y: 4)
+            .padding(.horizontal, 20)
 
-            Text(verbatim: "\(step.letter.nameEn) · \(step.letter.transliteration)")
-                .font(.system(size: AB.small))
-                .foregroundStyle(AB.neutral400)
+            HStack {
+                Text(verbatim: "\(step.letter.nameEn) · \(step.letter.transliteration)")
+                    .font(.system(size: AB.small))
+                    .foregroundStyle(AB.neutral400)
 
-            Button {
-                strokes = []
-                clearTrigger += 1
-            } label: {
-                Label("Clear & retry", systemImage: "arrow.counterclockwise")
-                    .font(.system(size: AB.small, weight: .semibold))
-                    .foregroundStyle(AB.sage)
+                Spacer()
+
+                Button {
+                    strokes = []
+                    clearTrigger += 1
+                } label: {
+                    Label("Clear & retry", systemImage: "arrow.counterclockwise")
+                        .font(.system(size: AB.small, weight: .semibold))
+                        .foregroundStyle(AB.sage)
+                }
+                .disabled(strokes.isEmpty)
+                .opacity(strokes.isEmpty ? 0.4 : 1)
             }
-            .disabled(strokes.isEmpty)
-            .opacity(strokes.isEmpty ? 0.4 : 1)
+            .padding(.horizontal, 28)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: - B. Select the sound (§4.2 B)

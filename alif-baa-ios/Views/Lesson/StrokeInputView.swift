@@ -20,7 +20,7 @@ struct StrokeInputView: UIViewRepresentable {
         canvas.backgroundColor = .clear
         canvas.isOpaque = false
         canvas.isScrollEnabled = false
-        canvas.tool = PKInkingTool(.pen, color: UIColor(AB.primary), width: 10)
+        canvas.tool = PKInkingTool(.pen, color: UIColor(AB.primary), width: 18)
         canvas.delegate = context.coordinator
         return canvas
     }

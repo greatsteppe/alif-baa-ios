@@ -53,8 +53,8 @@ final class GoldenPathUITests: XCTestCase {
             XCTAssertTrue(check.waitForExistence(timeout: 5), "Check button missing at step \(step)")
 
             if app.staticTexts["Draw the letter along the outline, then tap Proceed"].exists {
-                let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.32))
-                let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.52, dy: 0.5))
+                let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.3))
+                let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.52, dy: 0.65))
                 from.press(forDuration: 0.1, thenDragTo: to)
                 if step == 0 { snap(app, "05-exercise-draw") }
             } else if app.buttons["sound-option-0"].exists {
