@@ -56,7 +56,7 @@ final class GoldenPathUITests: XCTestCase {
                 if step == 3 {
                     // Ba: catch the letter mid-draw (solid line growing from
                     // the right), then wait out the rest of the reveal.
-                    Thread.sleep(forTimeInterval: 0.6)
+                    Thread.sleep(forTimeInterval: 0.3)
                     snap(app, "05a-guide-ba-mid")
                     Thread.sleep(forTimeInterval: 4.0)
                     snap(app, "05b-guide-ba")
