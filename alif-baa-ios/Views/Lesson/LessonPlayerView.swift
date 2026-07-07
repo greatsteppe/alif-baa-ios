@@ -136,6 +136,10 @@ struct LessonPlayerView: View {
             topBar
             ExerciseStepView(step: step, strict: strictStrokes, locked: feedback != nil) { correct in
                 handleAnswer(step: step, correct: correct)
+            } onRetry: {
+                // Clear & retry during feedback: dismiss the banner and stay
+                // on this step for another attempt.
+                feedback = nil
             }
             .id(step.id)
         }

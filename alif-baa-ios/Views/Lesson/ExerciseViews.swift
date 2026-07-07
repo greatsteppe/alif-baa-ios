@@ -13,6 +13,8 @@ struct ExerciseStepView: View {
     let strict: Bool
     let locked: Bool
     let onAnswer: (Bool) -> Void
+    /// Dismisses the feedback banner for another attempt at the same step.
+    let onRetry: () -> Void
 
     @State private var selectedIndex: Int?
     @State private var strokes: [[CGPoint]] = []
@@ -36,11 +38,10 @@ struct ExerciseStepView: View {
 
             Button("Check") { check() }
                 .buttonStyle(PillButtonStyle())
-                .disabled(!canCheck)
+                .disabled(!canCheck || locked)
                 .padding(.horizontal, 24)
                 .padding(.bottom, 16)
         }
-        .allowsHitTesting(!locked)
         .onAppear {
             if step.kind == .articulation {
                 playTarget()
@@ -96,6 +97,34 @@ struct ExerciseStepView: View {
 
     private var drawBody: some View {
         VStack(spacing: 12) {
+            // Caption + clear sit above the canvas so the feedback banner
+            // sliding over the bottom never covers them. Clear stays live even
+            // while the banner is up: it doubles as "retry this letter".
+            HStack {
+                Text(verbatim: "\(step.letter.nameEn) · \(step.letter.transliteration)")
+                    .font(.system(size: AB.small))
+                    .foregroundStyle(AB.neutral400)
+
+                Spacer()
+
+                Button {
+                    strokes = []
+                    clearTrigger += 1
+                    if locked { onRetry() }
+                } label: {
+                    Label("Clear & retry", systemImage: "arrow.counterclockwise")
+                        .font(.system(size: AB.small, weight: .semibold))
+                        .foregroundStyle(AB.sage)
+                        .padding(.vertical, 12)
+                        .padding(.leading, 24)
+                        .contentShape(Rectangle())
+                }
+                .disabled(strokes.isEmpty)
+                .opacity(strokes.isEmpty ? 0.4 : 1)
+                .accessibilityIdentifier("clear-retry")
+            }
+            .padding(.horizontal, 28)
+
             // Full-size canvas: the guide letter draws itself, then its sound
             // plays; the learner traces over it.
             GeometryReader { geo in
@@ -110,26 +139,7 @@ struct ExerciseStepView: View {
             .clipShape(RoundedRectangle(cornerRadius: AB.radiusCard, style: .continuous))
             .shadow(color: AB.cardShadow, radius: 15, x: 0, y: 4)
             .padding(.horizontal, 20)
-
-            HStack {
-                Text(verbatim: "\(step.letter.nameEn) · \(step.letter.transliteration)")
-                    .font(.system(size: AB.small))
-                    .foregroundStyle(AB.neutral400)
-
-                Spacer()
-
-                Button {
-                    strokes = []
-                    clearTrigger += 1
-                } label: {
-                    Label("Clear & retry", systemImage: "arrow.counterclockwise")
-                        .font(.system(size: AB.small, weight: .semibold))
-                        .foregroundStyle(AB.sage)
-                }
-                .disabled(strokes.isEmpty)
-                .opacity(strokes.isEmpty ? 0.4 : 1)
-            }
-            .padding(.horizontal, 28)
+            .allowsHitTesting(!locked)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
@@ -155,6 +165,7 @@ struct ExerciseStepView: View {
             }
         }
         .padding(.horizontal, 24)
+        .allowsHitTesting(!locked)
     }
 
     // MARK: - C. Articulation (§4.2 C)
@@ -195,6 +206,7 @@ struct ExerciseStepView: View {
             }
         }
         .padding(.horizontal, 24)
+        .allowsHitTesting(!locked)
     }
 }
 

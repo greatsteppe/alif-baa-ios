@@ -53,10 +53,25 @@ final class GoldenPathUITests: XCTestCase {
             XCTAssertTrue(check.waitForExistence(timeout: 5), "Check button missing at step \(step)")
 
             if app.staticTexts["Draw the letter along the outline, then tap Proceed"].exists {
+                if step == 3 {
+                    // Ba: wait out the glyph trace + ghost fill so the snapshot
+                    // shows the fully drawn letter.
+                    Thread.sleep(forTimeInterval: 4.2)
+                    snap(app, "05b-guide-ba")
+                }
                 let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.3))
                 let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.52, dy: 0.65))
                 from.press(forDuration: 0.1, thenDragTo: to)
-                if step == 0 { snap(app, "05-exercise-draw") }
+                if step == 0 {
+                    snap(app, "05-exercise-draw")
+                    // Clear & retry empties the canvas, disabling Check.
+                    let clear = app.buttons["clear-retry"]
+                    XCTAssertTrue(clear.waitForExistence(timeout: 2), "Clear & retry missing")
+                    clear.tap()
+                    Thread.sleep(forTimeInterval: 0.4)
+                    XCTAssertFalse(check.isEnabled, "Check should disable after clearing")
+                    from.press(forDuration: 0.1, thenDragTo: to)
+                }
             } else if app.buttons["sound-option-0"].exists {
                 app.buttons["sound-option-0"].tap()
                 if step == 1 { snap(app, "06-exercise-sound") }
@@ -68,7 +83,19 @@ final class GoldenPathUITests: XCTestCase {
             XCTAssertTrue(check.isEnabled, "Check disabled at step \(step)")
             check.tap()
             XCTAssertTrue(proceed.waitForExistence(timeout: 3), "Feedback banner missing at step \(step)")
-            if step == 0 { snap(app, "08-feedback-banner") }
+            if step == 0 {
+                snap(app, "08-feedback-banner")
+                // Clear & retry stays tappable under the banner: it dismisses
+                // the feedback and allows another attempt at the same letter.
+                app.buttons["clear-retry"].tap()
+                Thread.sleep(forTimeInterval: 0.6)
+                XCTAssertFalse(proceed.exists, "Banner should dismiss on Clear & retry")
+                let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.35))
+                let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.52, dy: 0.62))
+                from.press(forDuration: 0.1, thenDragTo: to)
+                check.tap()
+                XCTAssertTrue(proceed.waitForExistence(timeout: 3), "Banner missing after retry")
+            }
             proceed.tap()
         }
 
