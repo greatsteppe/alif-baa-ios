@@ -54,9 +54,11 @@ final class GoldenPathUITests: XCTestCase {
 
             if app.staticTexts["Draw the letter along the outline, then tap Proceed"].exists {
                 if step == 3 {
-                    // Ba: wait out the glyph trace + ghost fill so the snapshot
-                    // shows the fully drawn letter.
-                    Thread.sleep(forTimeInterval: 4.2)
+                    // Ba: catch the letter mid-draw (solid line growing from
+                    // the right), then wait out the rest of the reveal.
+                    Thread.sleep(forTimeInterval: 0.6)
+                    snap(app, "05a-guide-ba-mid")
+                    Thread.sleep(forTimeInterval: 4.0)
                     snap(app, "05b-guide-ba")
                 }
                 let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.3))

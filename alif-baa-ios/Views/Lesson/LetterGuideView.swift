@@ -2,10 +2,11 @@
 //  LetterGuideView.swift
 //  alif-baa-ios
 //
-//  Animated tracing guide for the Draw exercise (§4.2 A): the letter's real
-//  font glyph (Noto Sans Arabic) outlines itself like handwriting, ghost-fills,
-//  then the letter's sound plays. Letters whose glyph can't be extracted fall
-//  back to the static ghosted glyph.
+//  Animated tracing guide for the Draw exercise (§4.2 A): the letter appears
+//  as one solid pen line drawn right to left — base stroke first, dots after,
+//  the way Arabic is written — using the letter's real font glyph (Noto Sans
+//  Arabic), then the letter's sound plays. Letters whose glyph can't be
+//  extracted fall back to the static ghosted glyph.
 //
 
 import SwiftUI
@@ -17,26 +18,33 @@ struct LetterGuideView: View {
     let size: CGSize
 
     @State private var trace: Double = 0
-    @State private var fillIn: Double = 0
+    @State private var settled = false
     @State private var didReveal = false
 
-    private var glyph: CGPath? {
-        ArabicGlyphOutline.path(for: letter.arabic)
+    private var glyph: ArabicGlyphOutline.Glyph? {
+        ArabicGlyphOutline.glyph(for: letter.arabic)
     }
 
     var body: some View {
         Group {
             if let glyph {
-                ZStack {
-                    GlyphShape(glyph: glyph, progress: 1)
-                        .fill(AB.neutral300.opacity(0.8))
-                        .opacity(fillIn)
-                    GlyphShape(glyph: glyph, progress: trace)
-                        .stroke(
-                            AB.neutral400.opacity(0.7),
-                            style: StrokeStyle(lineWidth: 3, lineCap: .round, lineJoin: .round)
-                        )
-                }
+                GlyphFillShape(glyph: glyph.fill, box: glyph.box)
+                    .fill(AB.neutral300.opacity(0.8))
+                    .mask {
+                        ZStack {
+                            // A thick round pen sweeping the writing line
+                            // uncovers the solid letter as it goes.
+                            PenStrokeShape(pen: glyph.pen, box: glyph.box, progress: trace)
+                                .stroke(style: StrokeStyle(
+                                    lineWidth: min(size.width, size.height) * 0.15,
+                                    lineCap: .round,
+                                    lineJoin: .round
+                                ))
+                            if settled {
+                                Rectangle()   // guarantees the finished letter is complete
+                            }
+                        }
+                    }
             } else {
                 ArabicText(
                     text: letter.arabic,
@@ -61,21 +69,34 @@ struct LetterGuideView: View {
             return
         }
 
-        let outline = GlyphShape.outlineLength(of: glyph, in: size)
-        let duration = min(max(Double(outline / GlyphShape.traceSpeed), 1.1), 3.0)
+        // Pen speed along the writing line, canvas points per second —
+        // unhurried, so the eye can follow the right-to-left motion.
+        let side = min(size.width, size.height) * 0.8
+        let scale = min(side / glyph.box.width, side / glyph.box.height)
+        let duration = min(max(Double(glyph.penLength * scale) / 320, 1.4), 3.5)
         withAnimation(.linear(duration: duration).delay(0.35), completionCriteria: .logicallyComplete) {
             trace = 1
         } completion: {
-            withAnimation(.easeOut(duration: 0.35)) { fillIn = 1 }
+            withAnimation(.easeOut(duration: 0.2)) { settled = true }
             AudioService.shared.playLetter(id: letter.id, audioFile: letter.audioFile)
         }
     }
 }
 
-/// Draws the glyph outline up to `progress` (0…1 of the contour length),
-/// aspect-fit into a centered square of the rect.
-struct GlyphShape: Shape {
+/// The letter as the font fills it, aspect-fit into a centered square.
+struct GlyphFillShape: Shape {
     let glyph: CGPath
+    let box: CGRect
+
+    func path(in rect: CGRect) -> Path {
+        GlyphFit.fit(glyph, box: box, in: rect)
+    }
+}
+
+/// The writing line revealed up to `progress` (0…1 of its length).
+struct PenStrokeShape: Shape {
+    let pen: CGPath
+    let box: CGRect
     var progress: Double
 
     var animatableData: Double {
@@ -83,21 +104,17 @@ struct GlyphShape: Shape {
         set { progress = newValue }
     }
 
-    /// Outline tracing speed, canvas points per second.
-    static let traceSpeed: CGFloat = 550
-
     func path(in rect: CGRect) -> Path {
-        let fitted = Self.fitted(glyph, in: rect)
+        let fitted = GlyphFit.fit(pen, box: box, in: rect)
         return progress >= 1 ? fitted : fitted.trimmedPath(from: 0, to: progress)
     }
+}
 
-    static func outlineLength(of glyph: CGPath, in size: CGSize) -> CGFloat {
-        length(of: fitted(glyph, in: CGRect(origin: .zero, size: size)))
-    }
-
-    /// Glyph bounding box aspect-fit into a centered square of the rect.
-    private static func fitted(_ glyph: CGPath, in rect: CGRect) -> Path {
-        let box = glyph.boundingBoxOfPath
+enum GlyphFit {
+    /// Aspect-fit a path into a centered square covering 80 % of the rect's
+    /// short side. `box` is the fill glyph's bounds so the pen line and the
+    /// fill land on exactly the same spot.
+    static func fit(_ path: CGPath, box: CGRect, in rect: CGRect) -> Path {
         guard box.width > 0, box.height > 0, rect.width > 0, rect.height > 0 else { return Path() }
         let side = min(rect.width, rect.height) * 0.8
         let scale = min(side / box.width, side / box.height)
@@ -105,70 +122,26 @@ struct GlyphShape: Shape {
             translationX: rect.midX - box.midX * scale,
             y: rect.midY - box.midY * scale
         ).scaledBy(x: scale, y: scale)
-        return Path(glyph).applying(transform)
-    }
-
-    /// Approximate arc length; curves are sampled as short chords.
-    private static func length(of path: Path) -> CGFloat {
-        var total: CGFloat = 0
-        var current = CGPoint.zero
-        var subpathStart = CGPoint.zero
-
-        func polyline(_ point: (CGFloat) -> CGPoint, samples: Int = 8) -> CGFloat {
-            var sum: CGFloat = 0
-            var previous = point(0)
-            for i in 1...samples {
-                let next = point(CGFloat(i) / CGFloat(samples))
-                sum += hypot(next.x - previous.x, next.y - previous.y)
-                previous = next
-            }
-            return sum
-        }
-
-        path.forEach { element in
-            switch element {
-            case .move(let to):
-                current = to
-                subpathStart = to
-            case .line(let to):
-                total += hypot(to.x - current.x, to.y - current.y)
-                current = to
-            case .quadCurve(let to, let control):
-                let start = current
-                total += polyline { t in
-                    let u = 1 - t
-                    return CGPoint(
-                        x: u*u * start.x + 2*u*t * control.x + t*t * to.x,
-                        y: u*u * start.y + 2*u*t * control.y + t*t * to.y
-                    )
-                }
-                current = to
-            case .curve(let to, let control1, let control2):
-                let start = current
-                total += polyline { t in
-                    let u = 1 - t
-                    return CGPoint(
-                        x: u*u*u * start.x + 3*u*u*t * control1.x + 3*u*t*t * control2.x + t*t*t * to.x,
-                        y: u*u*u * start.y + 3*u*u*t * control1.y + 3*u*t*t * control2.y + t*t*t * to.y
-                    )
-                }
-                current = to
-            case .closeSubpath:
-                total += hypot(subpathStart.x - current.x, subpathStart.y - current.y)
-                current = subpathStart
-            }
-        }
-        return total
+        return Path(path).applying(transform)
     }
 }
 
-/// Extracts and caches the outline of a string as drawn by the app's Arabic
-/// face (Noto Sans Arabic, system cascade fallback), y-flipped for screen use.
+/// Extracts and caches the letter's outline from the app's Arabic face
+/// (Noto Sans Arabic, system cascade fallback), plus the "pen" line the
+/// reveal follows: every contour restarted at its rightmost point running
+/// right to left along its top, base stroke before the dots.
 @MainActor
 enum ArabicGlyphOutline {
-    private static var cache: [String: CGPath] = [:]
+    struct Glyph {
+        let fill: CGPath        // what the letter looks like
+        let pen: CGPath         // the writing line the reveal follows
+        let box: CGRect         // fill bounds; both paths are fit with it
+        let penLength: CGFloat  // in glyph units, for the trace duration
+    }
 
-    static func path(for text: String) -> CGPath? {
+    private static var cache: [String: Glyph] = [:]
+
+    static func glyph(for text: String) -> Glyph? {
         if let cached = cache[text] { return cached }
 
         // Same face ArabicText renders with; the cascade guarantees a font
@@ -202,7 +175,125 @@ enum ArabicGlyphOutline {
         // Font space is y-up; flip once so shapes can fit it directly.
         var flip = CGAffineTransform(scaleX: 1, y: -1)
         let flipped = outline.copy(using: &flip) ?? outline
-        cache[text] = flipped
-        return flipped
+
+        let contours = penContours(of: flipped)
+        guard !contours.isEmpty else { return nil }
+
+        let pen = CGMutablePath()
+        var penLength: CGFloat = 0
+        for contour in contours {
+            pen.move(to: contour[0])
+            for point in contour.dropFirst() {
+                pen.addLine(to: point)
+            }
+            pen.closeSubpath()
+            penLength += length(of: contour)
+        }
+
+        let glyph = Glyph(fill: flipped, pen: pen, box: flipped.boundingBoxOfPath, penLength: penLength)
+        cache[text] = glyph
+        return glyph
+    }
+
+    // MARK: - Pen line construction
+
+    /// Flattens the outline into polylines ordered like handwriting: the
+    /// longest contour (the base stroke) leads, the rest (dots) follow right
+    /// to left.
+    private static func penContours(of path: CGPath) -> [[CGPoint]] {
+        var contours: [[CGPoint]] = []
+        var current: [CGPoint] = []
+
+        path.applyWithBlock { element in
+            let e = element.pointee
+            let p = e.points
+
+            func addSamples(_ point: (CGFloat) -> CGPoint) {
+                for i in 1...12 {
+                    current.append(point(CGFloat(i) / 12))
+                }
+            }
+
+            switch e.type {
+            case .moveToPoint:
+                if current.count > 2 { contours.append(current) }
+                current = [p[0]]
+            case .addLineToPoint:
+                current.append(p[0])
+            case .addQuadCurveToPoint:
+                guard let s = current.last else { break }
+                let c = p[0], to = p[1]
+                addSamples { t in
+                    let u = 1 - t
+                    return CGPoint(
+                        x: u*u * s.x + 2*u*t * c.x + t*t * to.x,
+                        y: u*u * s.y + 2*u*t * c.y + t*t * to.y
+                    )
+                }
+            case .addCurveToPoint:
+                guard let s = current.last else { break }
+                let c1 = p[0], c2 = p[1], to = p[2]
+                addSamples { t in
+                    let u = 1 - t
+                    return CGPoint(
+                        x: u*u*u * s.x + 3*u*u*t * c1.x + 3*u*t*t * c2.x + t*t*t * to.x,
+                        y: u*u*u * s.y + 3*u*u*t * c1.y + 3*u*t*t * c2.y + t*t*t * to.y
+                    )
+                }
+            case .closeSubpath:
+                if current.count > 2 { contours.append(current) }
+                current = []
+            @unknown default:
+                break
+            }
+        }
+        if current.count > 2 { contours.append(current) }
+
+        var ordered = contours.map(rightToLeft)
+        guard ordered.count > 1 else { return ordered }
+
+        var bodyIndex = 0
+        for index in ordered.indices where length(of: ordered[index]) > length(of: ordered[bodyIndex]) {
+            bodyIndex = index
+        }
+        let body = ordered.remove(at: bodyIndex)
+        ordered.sort { maxX($0) > maxX($1) }
+        return [body] + ordered
+    }
+
+    /// Restarts a closed contour at its rightmost point, running its upper
+    /// side first — the pen direction of Arabic handwriting.
+    private static func rightToLeft(_ points: [CGPoint]) -> [CGPoint] {
+        guard points.count > 2 else { return points }
+
+        var start = 0
+        for index in points.indices
+        where (points[index].x, -points[index].y) > (points[start].x, -points[start].y) {
+            start = index
+        }
+        let rotated = Array(points[start...] + points[..<start])
+
+        // Of the two ways around the loop, pick the one whose opening leg sits
+        // higher (screen y grows downward): the pen draws along the top edge
+        // heading left before coming back underneath.
+        let quarter = max(2, rotated.count / 4)
+        let reversed = [rotated[0]] + rotated.dropFirst().reversed()
+        let forwardY = rotated[1...quarter].reduce(0) { $0 + $1.y }
+        let backwardY = reversed[1...quarter].reduce(0) { $0 + $1.y }
+        return backwardY < forwardY ? reversed : rotated
+    }
+
+    /// Polyline length including the closing segment.
+    private static func length(of points: [CGPoint]) -> CGFloat {
+        guard points.count > 1, let first = points.first, let last = points.last else { return 0 }
+        var total: CGFloat = 0
+        for index in 1..<points.count {
+            total += hypot(points[index].x - points[index - 1].x, points[index].y - points[index - 1].y)
+        }
+        return total + hypot(first.x - last.x, first.y - last.y)
+    }
+
+    private static func maxX(_ points: [CGPoint]) -> CGFloat {
+        points.reduce(-.greatestFiniteMagnitude) { max($0, $1.x) }
     }
 }
