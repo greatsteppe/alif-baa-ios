@@ -1,1542 +1,1578 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "%lld of %lld lessons completed": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%1$lld/%2$lld сабақ аяқталды"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld of %lld lessons completed" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld/%2$lld сабақ аяқталды"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Пройдено уроков: %1$lld из %2$lld"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пройдено уроков: %1$lld из %2$lld"
           }
         }
       }
     },
-    "A beginner": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жаңадан бастаушы"
+    "A beginner" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жаңадан бастаушы"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Начинающий"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начинающий"
           }
         }
       }
     },
-    "A few minutes with the Arabic letters keeps them fresh.": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Араб әріптерімен бірнеше минут — олар есте жақсы сақталады."
+    "A few minutes with the Arabic letters keeps them fresh." : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Араб әріптерімен бірнеше минут — олар есте жақсы сақталады."
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Несколько минут с арабскими буквами — и они останутся в памяти."
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Несколько минут с арабскими буквами — и они останутся в памяти."
           }
         }
       }
     },
-    "A new item is available in the Content tab": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "«Мазмұн» қойындысында жаңа материал пайда болды"
+    "A new item is available in the Content tab" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«Мазмұн» қойындысында жаңа материал пайда болды"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Во вкладке «Материалы» появился новый элемент"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Во вкладке «Материалы» появился новый элемент"
           }
         }
       }
     },
-    "About Alif Baa": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alif Baa туралы"
+    "About Alif Baa" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alif Baa туралы"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Об Alif Baa"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Об Alif Baa"
           }
         }
       }
     },
-    "Al-Ikhlas (Sincerity)": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әл-Ихлас (Ықылас)"
+    "Al-Ikhlas (Sincerity)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әл-Ихлас (Ықылас)"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Аль-Ихлас (Искренность)"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аль-Ихлас (Искренность)"
           }
         }
       }
     },
-    "Alif Ba Ta Tha": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әлиф Ба Та Са"
+    "Alif Ba Ta Tha" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әлиф Ба Та Са"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Алиф Ба Та Са"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алиф Ба Та Са"
           }
         }
       }
     },
-    "All lessons return to their initial state and review history is cleared.": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Барлық сабақтар бастапқы күйіне оралады, қайталау тарихы өшіріледі."
+    "All lessons return to their initial state and review history is cleared." : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Барлық сабақтар бастапқы күйіне оралады, қайталау тарихы өшіріледі."
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Все уроки вернутся в исходное состояние, история повторений будет очищена."
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все уроки вернутся в исходное состояние, история повторений будет очищена."
           }
         }
       }
     },
-    "Alphabet": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әліпби"
+    "Alphabet" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әліпби"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Алфавит"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алфавит"
           }
         }
       }
     },
-    "Alphabet Song": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әліпби әні"
+    "Alphabet Song" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әліпби әні"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Песня об алфавите"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Песня об алфавите"
           }
         }
       }
     },
-    "Alphabet without revision lessons — the quickest route through the 28 letters": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қайталау сабақтарынсыз әліпби — 28 әріптен өтудің ең жылдам жолы"
+    "Alphabet without revision lessons — the quickest route through the 28 letters" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қайталау сабақтарынсыз әліпби — 28 әріптен өтудің ең жылдам жолы"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Алфавит без уроков повторения — самый быстрый путь через 28 букв"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алфавит без уроков повторения — самый быстрый путь через 28 букв"
           }
         }
       }
     },
-    "An-Nas (Mankind)": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ән-Нас (Адамдар)"
+    "An-Nas (Mankind)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ән-Нас (Адамдар)"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ан-Нас (Люди)"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ан-Нас (Люди)"
           }
         }
       }
     },
-    "Available for learners who already know the alphabet": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әліпбиді білетіндерге ғана қолжетімді"
+    "Available for learners who already know the alphabet" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әліпбиді білетіндерге ғана қолжетімді"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Доступно тем, кто уже знает алфавит"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступно тем, кто уже знает алфавит"
           }
         }
       }
     },
-    "Awesome!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Керемет!"
+    "Awesome!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Керемет!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Великолепно!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Великолепно!"
           }
         }
       }
     },
-    "Back": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Артқа"
+    "Back" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Артқа"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Назад"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назад"
           }
         }
       }
     },
-    "Cancel": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Болдырмау"
+    "Cancel" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Болдырмау"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Отмена"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
           }
         }
       }
     },
-    "Check": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тексеру"
+    "Check" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тексеру"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Проверить"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить"
           }
         }
       }
     },
-    "Clear & retry": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Өшіріп, қайта бастау"
+    "Clear & retry" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өшіріп, қайта бастау"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Стереть и заново"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стереть и заново"
           }
         }
       }
     },
-    "Close lesson": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сабақты жабу"
+    "Close lesson" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сабақты жабу"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Закрыть урок"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть урок"
           }
         }
       }
     },
-    "Complete Lesson %lld to unlock": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ашу үшін %lld-сабақты аяқтаңыз"
+    "Complete Lesson %lld to unlock" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ашу үшін %lld-сабақты аяқтаңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Пройдите урок %lld, чтобы открыть"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пройдите урок %lld, чтобы открыть"
           }
         }
       }
     },
-    "Configuring your program": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Бағдарламаңызды баптап жатырмыз"
+    "Configuring your program" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бағдарламаңызды баптап жатырмыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Настраиваем вашу программу"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настраиваем вашу программу"
           }
         }
       }
     },
-    "Content": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мазмұн"
+    "Content" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мазмұн"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Материалы"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Материалы"
           }
         }
       }
     },
-    "Daily reminder": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Күнделікті еске салу"
+    "Daily reminder" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Күнделікті еске салу"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ежедневное напоминание"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ежедневное напоминание"
           }
         }
       }
     },
-    "Dal Dhal Ro Za": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дәл Зәл Ра За"
+    "Dal Dhal Ro Za" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дәл Зәл Ра За"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Даль Заль Ра За"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Даль Заль Ра За"
           }
         }
       }
     },
-    "Dark mode (preview)": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қараңғы режим (алдын ала қарау)"
+    "Dark mode (preview)" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қараңғы режим (алдын ала қарау)"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тёмная тема (предпросмотр)"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная тема (предпросмотр)"
           }
         }
       }
     },
-    "Draw": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сызу"
+    "Draw" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сызу"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Рисование"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рисование"
           }
         }
       }
     },
-    "Draw the letter along the outline, then tap Proceed": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әріпті контур бойымен сызып, «Жалғастыру» түймесін басыңыз"
+    "Draw the letter along the outline, then tap Proceed" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әріпті контур бойымен сызып, «Жалғастыру» түймесін басыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Обведите букву по контуру, затем нажмите «Продолжить»"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обведите букву по контуру, затем нажмите «Продолжить»"
           }
         }
       }
     },
-    "Educational": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Оқу материалдары"
+    "Educational" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оқу материалдары"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Обучающее"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обучающее"
           }
         }
       }
     },
-    "Excellent!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Өте жақсы!"
+    "Excellent!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өте жақсы!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Превосходно!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Превосходно!"
           }
         }
       }
     },
-    "Fa Qof Kaf": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Фа Қаф Кәф"
+    "Fa Qof Kaf" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фа Қаф Кәф"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Фа Каф Кяф"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фа Каф Кяф"
           }
         }
       }
     },
-    "Fast": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жылдам"
+    "Fast" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жылдам"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Быстрая"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Быстрая"
           }
         }
       }
     },
-    "Follow the outline and try again": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Контур бойымен жүргізіп, қайта көріңіз"
+    "Follow the outline and try again" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Контур бойымен жүргізіп, қайта көріңіз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ведите по контуру и попробуйте ещё раз"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ведите по контуру и попробуйте ещё раз"
           }
         }
       }
     },
-    "Go straight to reading": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Бірден оқуға көшу"
+    "Go straight to reading" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бірден оқуға көшу"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сразу к чтению"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сразу к чтению"
           }
         }
       }
     },
-    "Good job!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жарайсың!"
+    "Good job!" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жарайсың!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Отличная работа!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отличная работа!"
           }
         }
       }
     },
-    "Great job!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тамаша жұмыс!"
+    "Great job!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тамаша жұмыс!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Прекрасная работа!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прекрасная работа!"
           }
         }
       }
     },
-    "Ha Waw Ya": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Һа Уау Йа"
+    "Ha Waw Ya" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Һа Уау Йа"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ха Вав Йа"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ха Вав Йа"
           }
         }
       }
     },
-    "I can read": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мен оқи аламын"
+    "I can read" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мен оқи аламын"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Я умею читать"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я умею читать"
           }
         }
       }
     },
-    "I know tajweed": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мен тәжуидті білемін"
+    "I know tajweed" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мен тәжуидті білемін"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Я знаю таджвид"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я знаю таджвид"
           }
         }
       }
     },
-    "I know the alphabet": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мен әліпбиді білемін"
+    "I know the alphabet" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мен әліпбиді білемін"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Я знаю алфавит"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я знаю алфавит"
           }
         }
       }
     },
-    "I repeated it": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мен қайталадым"
+    "I repeated it" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мен қайталадым"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Я повторил(а)"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я повторил(а)"
           }
         }
       }
     },
-    "Includes revision lessons that re-test earlier letter groups via SRS before advancing": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Алға жылжымас бұрын өткен әріп топтарын қайта тексеретін қайталау сабақтарын қамтиды"
+    "Includes revision lessons that re-test earlier letter groups via SRS before advancing" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алға жылжымас бұрын өткен әріп топтарын қайта тексеретін қайталау сабақтарын қамтиды"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Включает уроки повторения, которые перепроверяют пройденные группы букв перед продолжением"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включает уроки повторения, которые перепроверяют пройденные группы букв перед продолжением"
           }
         }
       }
     },
-    "Jeem Ha Kho": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жим Ха Хо"
+    "Jeem Ha Kho" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жим Ха Хо"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Джим Ха Хо"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Джим Ха Хо"
           }
         }
       }
     },
-    "Keep it up!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Осылай жалғастыр!"
+    "Keep it up!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осылай жалғастыр!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Так держать!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Так держать!"
           }
         }
       }
     },
-    "Lam Meem Noon": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ләм Мим Нун"
+    "Lam Meem Noon" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ләм Мим Нун"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Лям Мим Нун"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лям Мим Нун"
           }
         }
       }
     },
-    "Learn to read and write the Arabic alphabet, from zero. Fully offline — no account, no ads, no analytics.": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Араб әліпбиін нөлден оқып, жазуды үйреніңіз. Толығымен офлайн — аккаунтсыз, жарнамасыз, аналитикасыз."
+    "Learn to read and write the Arabic alphabet, from zero. Fully offline — no account, no ads, no analytics." : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Араб әліпбиін нөлден оқып, жазуды үйреніңіз. Толығымен офлайн — аккаунтсыз, жарнамасыз, аналитикасыз."
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Учитесь читать и писать арабский алфавит с нуля. Полностью офлайн — без аккаунта, рекламы и аналитики."
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учитесь читать и писать арабский алфавит с нуля. Полностью офлайн — без аккаунта, рекламы и аналитики."
           }
         }
       }
     },
-    "Learning to read Arabic": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Арабша оқуды үйрену"
+    "Learning to read Arabic" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Арабша оқуды үйрену"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Учимся читать по-арабски"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учимся читать по-арабски"
           }
         }
       }
     },
-    "Lesson %lld": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld-сабақ"
+    "Lesson %lld" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld-сабақ"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Урок %lld"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урок %lld"
           }
         }
       }
     },
-    "Lesson %lld locked": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld-сабақ құлыпталған"
+    "Lesson %lld locked" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld-сабақ құлыпталған"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Урок %lld заблокирован"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урок %lld заблокирован"
           }
         }
       }
     },
-    "Lesson %lld: %@": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%1$lld-сабақ: %2$@"
+    "Lesson %lld: %@" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld-сабақ: %2$@"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Урок %1$lld: %2$@"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Урок %1$lld: %2$@"
           }
         }
       }
     },
-    "Library": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Кітапхана"
+    "Library" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кітапхана"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Библиотека"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Библиотека"
           }
         }
       }
     },
-    "Listen": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тыңдау"
+    "Listen" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тыңдау"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Слушать"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слушать"
           }
         }
       }
     },
-    "Listen carefully and repeat": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мұқият тыңдап, қайталаңыз"
+    "Listen carefully and repeat" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мұқият тыңдап, қайталаңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Слушайте внимательно и повторяйте"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слушайте внимательно и повторяйте"
           }
         }
       }
     },
-    "Main": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Басты бет"
+    "Main" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басты бет"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Главная"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
           }
         }
       }
     },
-    "MashaAllah, you've covered %lld letters out of 28!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "МашаАллаһ, сіз 28 әріптің %lld әрпін меңгердіңіз!"
+    "MashaAllah, you've covered %lld letters out of 28!" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "МашаАллаһ, сіз 28 әріптің %lld әрпін меңгердіңіз!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "МашаАллах, вы изучили %lld букв из 28!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "МашаАллах, вы изучили %lld букв из 28!"
           }
         }
       }
     },
-    "Match each letter with its sound": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әр әріпті өз дыбысымен сәйкестендіріңіз"
+    "Match each letter with its sound" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әр әріпті өз дыбысымен сәйкестендіріңіз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сопоставьте каждую букву с её звуком"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сопоставьте каждую букву с её звуком"
           }
         }
       }
     },
-    "Memorize": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Есте сақтау"
+    "Memorize" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Есте сақтау"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Запоминание"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запоминание"
           }
         }
       }
     },
-    "Next lesson": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Келесі сабақ"
+    "Next lesson" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Келесі сабақ"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Следующий урок"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий урок"
           }
         }
       }
     },
-    "Not quite": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дәл емес"
+    "Not quite" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дәл емес"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Не совсем"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не совсем"
           }
         }
       }
     },
-    "Now Letters with Vowels": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Енді харакаты бар әріптер"
+    "Now Letters with Vowels" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Енді харакаты бар әріптер"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Теперь буквы с огласовками"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Теперь буквы с огласовками"
           }
         }
       }
     },
-    "Play each sound, then say it out loud": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әр дыбысты ойнатып, дауыстап айтыңыз"
+    "Play each sound, then say it out loud" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әр дыбысты ойнатып, дауыстап айтыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Проигрывайте каждый звук и произносите его вслух"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проигрывайте каждый звук и произносите его вслух"
           }
         }
       }
     },
-    "Play sound": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дыбысты ойнату"
+    "Play sound" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дыбысты ойнату"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Воспроизвести звук"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Воспроизвести звук"
           }
         }
       }
     },
-    "Polishing recitation rules": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Оқу ережелерін жетілдіремін"
+    "Polishing recitation rules" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оқу ережелерін жетілдіремін"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Оттачиваю правила чтения"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оттачиваю правила чтения"
           }
         }
       }
     },
-    "Proceed": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жалғастыру"
+    "Proceed" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жалғастыру"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Продолжить"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить"
           }
         }
       }
     },
-    "Progress has been reset": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Прогресс бастапқы қалпына келтірілді"
+    "Progress has been reset" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс бастапқы қалпына келтірілді"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Прогресс сброшен"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс сброшен"
           }
         }
       }
     },
-    "Pronounce": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Айтылу"
+    "Pronounce" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Айтылу"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Произношение"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Произношение"
           }
         }
       }
     },
-    "Quranic Ayahs": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Құран аяттары"
+    "Quranic Ayahs" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Құран аяттары"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Аяты Корана"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аяты Корана"
           }
         }
       }
     },
-    "Ready to read words": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сөздерді оқуға дайынмын"
+    "Ready to read words" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сөздерді оқуға дайынмын"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Готов читать слова"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готов читать слова"
           }
         }
       }
     },
-    "Recognize the letter for a sound you hear": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Естіген дыбыс бойынша әріпті таныңыз"
+    "Recognize the letter for a sound you hear" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Естіген дыбыс бойынша әріпті таныңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Узнавайте букву по услышанному звуку"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Узнавайте букву по услышанному звуку"
           }
         }
       }
     },
-    "Reset Progress": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Прогресті бастапқы қалпына келтіру"
+    "Reset all progress?" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Барлық прогресті бастапқы қалпына келтіру керек пе?"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сбросить прогресс"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить весь прогресс?"
           }
         }
       }
     },
-    "Reset all progress?": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Барлық прогресті бастапқы қалпына келтіру керек пе?"
+    "Reset Progress" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресті бастапқы қалпына келтіру"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сбросить весь прогресс?"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить прогресс"
           }
         }
       }
     },
-    "Seen Sheen Sod Dod": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Син Шин Сад Дад"
+    "Seen Sheen Sod Dod" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Син Шин Сад Дад"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Син Шин Сад Дад"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Син Шин Сад Дад"
           }
         }
       }
     },
-    "Select the correct letter for this sound": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Осы дыбыстың дұрыс әрпін таңдаңыз"
+    "Select the correct letter for this sound" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осы дыбыстың дұрыс әрпін таңдаңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Выберите правильную букву для этого звука"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите правильную букву для этого звука"
           }
         }
       }
     },
-    "Select the correct sound for this letter": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Осы әріптің дұрыс дыбысын таңдаңыз"
+    "Select the correct sound for this letter" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осы әріптің дұрыс дыбысын таңдаңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Выберите правильный звук для этой буквы"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите правильный звук для этой буквы"
           }
         }
       }
     },
-    "Settings": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Баптаулар"
+    "Settings" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Баптаулар"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Настройки"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         }
       }
     },
-    "Short Articles": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қысқа мақалалар"
+    "Short Articles" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қысқа мақалалар"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Короткие статьи"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Короткие статьи"
           }
         }
       }
     },
-    "Skips letter-form drilling; only appropriate for learners who already know the alphabet": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әріптерді жаттауды өткізіп жібереді; тек әліпбиді білетіндерге ғана лайық"
+    "Skips letter-form drilling; only appropriate for learners who already know the alphabet" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әріптерді жаттауды өткізіп жібереді; тек әліпбиді білетіндерге ғана лайық"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Пропускает отработку букв; подходит только тем, кто уже знает алфавит"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропускает отработку букв; подходит только тем, кто уже знает алфавит"
           }
         }
       }
     },
-    "Sound effects": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дыбыс эффектілері"
+    "Sound effects" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дыбыс эффектілері"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Звуковые эффекты"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Звуковые эффекты"
           }
         }
       }
     },
-    "Sound option %lld": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дыбыс нұсқасы %lld"
+    "Sound option %lld" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дыбыс нұсқасы %lld"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Вариант звука %lld"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вариант звука %lld"
           }
         }
       }
     },
-    "Start": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Бастау"
+    "Start" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бастау"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Начать"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
           }
         }
       }
     },
-    "Starting from zero": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нөлден бастаймын"
+    "Starting from zero" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нөлден бастаймын"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Начинаю с нуля"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начинаю с нуля"
           }
         }
       }
     },
-    "Tap to continue": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жалғастыру үшін басыңыз"
+    "Tap to continue" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жалғастыру үшін басыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нажмите, чтобы продолжить"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы продолжить"
           }
         }
       }
     },
-    "Tap to listen": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тыңдау үшін басыңыз"
+    "Tap to listen" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тыңдау үшін басыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нажмите, чтобы послушать"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите, чтобы послушать"
           }
         }
       }
     },
-    "The Seven Oft-Repeated": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жеті қайталанатын аят"
+    "The correct answer: %@" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дұрыс жауап: %@"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Семь часто повторяемых"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Правильный ответ: %@"
           }
         }
       }
     },
-    "The correct answer: %@": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Дұрыс жауап: %@"
+    "The harakat — Fatha, Damma, Kasra — give each letter its vowel" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Харакаттар — фатха, дамма, кәсра — әр әріпке дауысты дыбыс береді"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Правильный ответ: %@"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Харакаты — фатха, дамма, касра — дают каждой букве её гласный звук"
           }
         }
       }
     },
-    "The harakat — Fatha, Damma, Kasra — give each letter its vowel": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Харакаттар — фатха, дамма, кәсра — әр әріпке дауысты дыбыс береді"
+    "The Seven Oft-Repeated" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жеті қайталанатын аят"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Харакаты — фатха, дамма, касра — дают каждой букве её гласный звук"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Семь часто повторяемых"
           }
         }
       }
     },
-    "The short vowels (harakat)": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қысқа дауыстылар (харакаттар)"
+    "The short vowels (harakat)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қысқа дауыстылар (харакаттар)"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Краткие гласные (харакаты)"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Краткие гласные (харакаты)"
           }
         }
       }
     },
-    "Thorough": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мұқият"
+    "Thorough" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мұқият"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Основательная"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основательная"
           }
         }
       }
     },
-    "Time to practice": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жаттығу уақыты"
+    "Time to practice" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жаттығу уақыты"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Время практики"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время практики"
           }
         }
       }
     },
-    "To Dho 'Ain Ghoin": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Та За Айн Ғайн"
+    "To Dho 'Ain Ghoin" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Та За Айн Ғайн"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Та За Айн Гайн"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Та За Айн Гайн"
           }
         }
       }
     },
-    "Trace each letter along its outline": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әр әріпті контуры бойымен сызыңыз"
+    "Trace each letter along its outline" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әр әріпті контуры бойымен сызыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Обводите каждую букву по контуру"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обводите каждую букву по контуру"
           }
         }
       }
     },
-    "Version %@": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нұсқа %@"
+    "Version %@" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нұсқа %@"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Версия %@"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия %@"
           }
         }
       }
     },
-    "Want to strengthen fluency": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Оқу шапшаңдығын жақсартқым келеді"
+    "Want to strengthen fluency" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оқу шапшаңдығын жақсартқым келеді"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Хочу укрепить беглость чтения"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хочу укрепить беглость чтения"
           }
         }
       }
     },
-    "Well done!": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жарайсың!"
+    "Well done!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жарайсың!"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Отлично!"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отлично!"
           }
         }
       }
     },
-    "What is your Arabic reading level?": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Арабша оқу деңгейіңіз қандай?"
+    "What is your Arabic reading level?" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Арабша оқу деңгейіңіз қандай?"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Каков ваш уровень чтения на арабском?"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каков ваш уровень чтения на арабском?"
           }
         }
       }
     },
-    "What program do you prefer?": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қай бағдарламаны қалайсыз?"
+    "What program do you prefer?" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қай бағдарламаны қалайсыз?"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Какую программу вы предпочитаете?"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Какую программу вы предпочитаете?"
           }
         }
       }
     },
-    "You've finished the letter exercises": {
-      "localizations": {
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Әріп жаттығуларын аяқтадыңыз"
+    "You've finished the letter exercises" : {
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Әріп жаттығуларын аяқтадыңыз"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Вы завершили упражнения с буквами"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы завершили упражнения с буквами"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
